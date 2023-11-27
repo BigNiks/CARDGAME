@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class Card {
+public class Card {
+    private String rank;
+
+    public Card() {
+
+    }
 }
