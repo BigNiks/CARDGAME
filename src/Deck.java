@@ -2,8 +2,10 @@ import java.util.ArrayList;
 
 
 public class Deck {
+    //instance variables for class
     private int temp;
     ArrayList<Card> deck = new ArrayList<Card>();
+    //constructs deck and adds values to the cards
     public Deck(String[] r, String[] s, int[] v) {
         for (int i = 0; i < r.length; i++) {
             for (int j = 0; j < s.length; j++) {
@@ -29,6 +31,7 @@ public class Deck {
     }
 
     public void shuffle() {
+        //shuffles around the deck by switching i and r
         for (int i = deck.size(); i > 0; i--) {
             int r = (int) (Math.random() * (i + 1));
             Card temp = deck.get(r);
